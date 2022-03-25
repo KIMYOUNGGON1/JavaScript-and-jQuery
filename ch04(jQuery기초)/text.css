@@ -1,0 +1,7 @@
+.hello {
+    background-image: url(images/gigu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 300px;
+}
