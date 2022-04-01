@@ -5,51 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>지구본 움직이기</title>
-    <style>
-        body{
-            font-size: 10pt;
-        }
-        #panel{
-            width: 600px;
-            height: 500px;
-            border: 1px solid #999;
-            position: relative;
-        }
-        #gigu{
-            position: absoulte;
-            width: 80px;
-            left: 50px;
-            top: 120px;
-        }
-        #nav {
-            text-align: center;
-            width: 600px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/gigu.css">
     <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            // 지구본 찾기
-            var $gigu = $("#gigu");
-            // 버튼에 이벤트 등록
-            $("#btnStart").click(function(){
-                // 지구본 움직이기
-                // 지구본 위치 값 구하기
-                var x = parseInt($("#txtX").val());
-                var y = parseInt($("#txtY").val());
-
-                if((x >= 0 && x <= 500) && (y >= 0 && y <= 300)) {
-                    $gigu.css({
-                        left : x,
-                        top : y
-                    });
-                }else {
-                    alert("입력된 값이 범위를 벗어났습니다.");
-                }
-
-            });
-        });
-    </script>
+    <script src="../js/gigu.js"></script>
 </head>
 <body>
     <div>
